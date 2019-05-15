@@ -1,0 +1,78 @@
+{
+    "Empty constructor": {
+        "prefix": "con",
+        "body": "constructor() {\n  super();\n  $1\n}$0"
+    },
+    "export default": {
+        "prefix": "ed",
+        "body": "export default $1;$0"
+    },
+    "const $Func = () => {}": {
+        "prefix": "cf",
+        "body": "const $1 = ($2) => {\n  return $3;\n};$0"
+    },
+    "const $Obj = {}": {
+        "prefix": "co",
+        "body": "const $1 = {\n  $2\n};$0"
+    },
+    "Class Component": {
+        "prefix": "rcc",
+        "body": "import React from 'react';\n\nclass $1 extends React.Component {\n  render() {\n    return (\n      $2\n    );\n  }\n}\n\nexport default $1;$0"
+    },
+    "Pure Class Component": {
+        "prefix": "rpc",
+        "body": "import React from 'react';\n\nclass $1 extends React.PureComponent {\n  render() {\n    return (\n      $2\n    );\n  }\n}\n\nexport default $1;$0"
+    },
+    "Function Component": {
+        "prefix": "rfc",
+        "body": "import React from 'react';\n\nconst $1 = (props) => {\n  return (\n    $2\n  );\n};\n\nexport default $1;$0"
+    },
+    "Import From": {
+        "prefix": "imf",
+        "body": "import $1 from '$2';$0"
+    },
+    "Import From .": {
+        "prefix": "imf.",
+        "body": "import $1 from './$1';$0"
+    },
+    "Import From ..": {
+        "prefix": "imf..",
+        "body": "import $1 from '../$1';$0"
+    },
+    "componentDidMount": {
+        "prefix": "cDM",
+        "body": "componentDidMount() {\n  $1\n}$0"
+    },
+    "componentWillReceiveProps": {
+        "prefix": "cWRP",
+        "body": "componentWillReceiveProps(nextProps) {\n  $1\n}$0"
+    },
+    "shouldComponentUpdate": {
+        "prefix": "sCU",
+        "body": "shouldComponentUpdate(nextProps, nextState) {\n  $1\n}$0"
+    },
+    "componentWillUpdate": {
+        "prefix": "cWU",
+        "body": "componentWillUpdate(nextProps, nextState) {\n  $1\n}$0"
+    },
+    "componentDidUpdate": {
+        "prefix": "cDU",
+        "body": "componentDidUpdate(prevProps, prevState) {\n  $1\n}$0"
+    },
+    "componentWillUnmount": {
+        "prefix": "cWUn",
+        "body": "componentWillUnmount() {\n  $1\n}$0"
+    },
+    "this.setState()": {
+        "prefix": "ss",
+        "body": "this.setState((prevState) => {\n  return $1;\n});$0"
+    },
+    "describe()": {
+        "prefix": "desc",
+        "body": "describe('$1', () => {\n\n  $2\n\n});$0"
+    },
+    "it()": {
+        "prefix": "it",
+        "body": "it('$1', () => {\n  $2\n});$0"
+    }
+}
