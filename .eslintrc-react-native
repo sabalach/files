@@ -1,0 +1,35 @@
+{
+    "parser": "babel-eslint",
+    "root": true,
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "@react-native-community"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", { "singleQuote": true }],
+        "react/display-name": 0,
+        "react/prop-types": 0,
+        "comma-dangle": 0,
+        "react/jsx-no-bind": "error",
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "quotes": ["error", "single"],
+        "no-console": ["warn", { "allow": ["info", "error"] }]
+    }
+}
